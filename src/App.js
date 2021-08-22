@@ -2,8 +2,9 @@
 import React, { Component } from 'react';
 
 import Container from './components/container/Container';
-import Form from './components/form/Form';
+import ContactForm from './components/contactForm/ContactForm';
 import Filter from './components/filter/Filter';
+import ContactList from './components/contactList/ContactList';
 
 
 class App extends Component {
@@ -43,20 +44,11 @@ class App extends Component {
     
     return (
       <Container>
-        <h2>Phonebook</h2>
-        <Form onSubmit={this.addContact}/>
+        <h1>Phonebook</h1>
+        <ContactForm onSubmit={this.addContact}/>
         <h2>Contacts</h2>
         <Filter value={this.state.filter} onChange={this.changeFilter} />
-        <ul className="contacts">
-          {visibleContacts.map(({ name, number, id }) => (
-            <li
-              key={id}
-              className="contacts__item"
-            >
-              {name}:  {number}
-            </li>
-          ))}
-  </ul>
+        <ContactList contacts = {visibleContacts} />
      </Container>
     );
   }

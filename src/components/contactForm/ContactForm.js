@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import shortid from 'shortid';
 
-class Form extends Component {
+class ContactForm extends Component {
     state = {
         name: '',
         number: ''
@@ -28,7 +28,7 @@ class Form extends Component {
 
     render() {
         return (
-            <form onSubmit = {this.handleSubmit}>
+          <form onSubmit = {this.handleSubmit}>
           <label htmlFor = {this.nameInputId}>
             Name
           <input
@@ -68,4 +68,4 @@ class Form extends Component {
     }
 }
 
-export default Form;
+export default ContactForm;
