@@ -6,7 +6,6 @@ import ContactForm from './components/contactForm/ContactForm';
 import Filter from './components/filter/Filter';
 import ContactList from './components/contactList/ContactList';
 
-
 class App extends Component {
   state = {
      contacts: [
@@ -18,9 +17,14 @@ class App extends Component {
     filter: ''
   }
 
-  addContact = (contact) => {
+  addContact = (newContact) => {
+    if (this.state.contacts.find(contact => contact.name === newContact.name)) {
+      alert(`${newContact.name} is already in contacts.`)
+      return;
+    }
+
     this.setState(({ contacts }) => ({
-      contacts: [contact, ...contacts],
+      contacts: [newContact, ...contacts],
     }));
   };
 

@@ -1,0 +1,26 @@
+.filter {
+    width: 300px;
+    padding: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: left;
+    font-size: 24px;
+}
+
+.label {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input {
+    padding: 10px;
+    text-align: left;
+    border: none;
+    border-bottom: 2px solid #000;
+}
+
+.input:focus {
+    outline: none;
+    border-bottom: 4px solid rgb(38, 238, 38);
+}
