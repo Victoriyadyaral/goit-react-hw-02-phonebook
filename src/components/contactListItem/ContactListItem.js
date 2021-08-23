@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { ImCross, ImRadioChecked2 } from "react-icons/im";
+import { ImBin, ImRadioChecked2 } from "react-icons/im";
 import s from "./ContactListItem.module.css";
 
 const ContactListItem = ({ name, number, id, onDeleteContact }) => {
@@ -15,7 +15,7 @@ const ContactListItem = ({ name, number, id, onDeleteContact }) => {
             type="button"
             onClick={() => onDeleteContact(id)}
             >
-            <ImCross color="rgb(190, 12, 27)" size="30px"/>
+            <ImBin color="rgb(11, 100, 11)" size="30px"/>
             </button>
             </li>
     )
