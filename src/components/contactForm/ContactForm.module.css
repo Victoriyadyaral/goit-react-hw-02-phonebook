@@ -28,12 +28,15 @@ form {
 }
 
 .button {
-   display: inline-block;
+   display: flex;
    margin-top: 20px;
    margin-right: auto;
    margin-left: auto;
+   padding: 8px 0;
+   align-items: center;
+   justify-content: space-around;
    border-radius: 2px;
-   width: 200px;
+   width: 180px;
    border: 1px solid rgb(11, 100, 11);
    background-color: transparent;
    font-family: inherit;

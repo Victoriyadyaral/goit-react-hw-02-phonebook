@@ -1,9 +1,11 @@
 .contactListItem {
-    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .button {
-    display: inline-block;
+    vertical-align: center;
     margin-left: 20px;
     margin-bottom: 15px;
     border-radius: 2px;

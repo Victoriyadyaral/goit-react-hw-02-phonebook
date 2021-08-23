@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import shortid from 'shortid';
+import { ImCheckmark } from "react-icons/im";
 import s from "./ContactForm.module.css";
 
 class ContactForm extends Component {
@@ -47,7 +48,7 @@ class ContactForm extends Component {
            </label>
                 
             <label htmlFor={this.phoneNumberInputId} className={s.label}>
-            Number
+            Number 
             <input
             type="tel"
             name="number"
@@ -66,7 +67,7 @@ class ContactForm extends Component {
           className={s.button}
           type="submit"
           >
-          Add contact
+            Add contact  <ImCheckmark color="rgb(11, 100, 11)" size="30px"/>
           </button>
         </form>
         )
