@@ -13,6 +13,7 @@ const ContactListItem = ({ name, number, id, onDeleteContact }) => {
             <button
             className={s.button}
             type="button"
+            aria-label="Delete contact"    
             onClick={() => onDeleteContact(id)}
             >
             <ImBin color="rgb(11, 100, 11)" size="30px"/>

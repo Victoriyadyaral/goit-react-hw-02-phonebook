@@ -36,7 +36,7 @@ class App extends Component {
     this.setState(prevState => ({
       contacts: prevState.contacts.filter(contact => contact.id !== contactId),
     }));
-    toast.error("Contact deleted from your phonebook!");
+    toast.warn("Contact deleted from your phonebook!");
   };
 
   changeFilter = (event) => {

@@ -5,13 +5,15 @@ import s from "./Filter.module.css";
 const Filter = ({ value, onChange }) => (
   <div className = {s.filter}>
   <label className={s.label}>
-   Find contacts by name 
+      Find contacts by name
+      <div className={s.castomInput}>
       <input
         type="text"
         value={value}
         onChange={onChange}
         className={s.input}
-      />
+        />
+     </div>
   </label>
   </div>
 );
